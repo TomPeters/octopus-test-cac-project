@@ -1,0 +1,3 @@
+variable "BoundPackageId" {
+    value "Reference.Web" {}
+}
