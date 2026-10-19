@@ -1,3 +1,5 @@
 variable "BoundPackageId" {
-    value "Reference.Web" {}
+    value "Reference.Web" {
+        environment = ["full-development-1", "full-development-2", "full-development-3", "full-production", "full-test"]
+    }
 }
