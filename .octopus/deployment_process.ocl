@@ -95,6 +95,14 @@ step "run-script-from-git" {
 
         git_dependencies {
             default_branch = "main"
+            file_path_filters = ["scripts/hello.sh"]
+            git_credential_type = "Anonymous"
+            repository_uri = "https://github.com/TomPeters/octopus-test-cac-project.git"
+        }
+
+        git_dependencies "docs" {
+            default_branch = "main"
+            file_path_filters = ["README.md", "scripts/*.sh"]
             git_credential_type = "Anonymous"
             repository_uri = "https://github.com/TomPeters/octopus-test-cac-project.git"
         }
